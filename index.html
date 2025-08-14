@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocalità corale & Direzione</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff8f0;
-        }
-        header {
-            background-color: #a63c24;
-            padding: 15px;
-            color: white;
-            text-align: center;
-        }
-        nav {
-            background-color: #a63c24;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding-bottom: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francesco Mazzitelli – Vocalità corale & Direzione</title>
+  <style>
+    :root{ --bg:#fffaf3; --fg:#1f1b16; --muted:#6b5e53; --brand:#a86b12; --brand2:#e8b25c; }
+    *{ box-sizing:border-box }
+    body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--fg);}
+    header {background: var(--brand); color: white; padding: 20px; text-align: center; position: sticky; top:0; z-index:5;}
+    nav a {color: white; margin: 0 10px; text-decoration: none; font-weight: bold;}
+    nav a:hover {text-decoration: underline;}
+    section {max-width: 1000px; margin: auto; padding: 40px 20px;}
+    h1, h2 {color: var(--brand);}
+    .hero {display:grid; grid-template-columns: 160px 1fr; gap:20px; align-items:center;}
+    .hero .avatar{width:160px; height:160px; object-fit:cover; border-radius:1000px; border:4px solid #ecdcc6;}
+    .grid {display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
+    .card {background: white; padding: 18px; border-radius: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border:1px solid #ecdcc6;}
+    .pill {display:inline-block; background:#fff; border:1px solid #ecdcc6; padding:6px 10px; border-radius:999px; color:var(--muted); font-size:13px}
+    footer {background: #1f1b16; color: white; text-align: center; padding: 15px;}
+    .btn {display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #e6d5bd; background:#fff; color:var(--fg); font-weight:700;}
+    .btn:hover{filter:brightness(0.98)}
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Vocalità corale & Direzione</h1>
-    </header>
-
+  <header>
+    <h1>Vocalità corale & Direzione</h1>
     <nav>
-        <a href="#">Chi sono</a>
-        <a href="#">Progetti</a>
-        <a href="#">Contatti</a>
-        <a href="index_eventi.html">Eventi</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#progetti">Progetti</a>
+      <a href="masterclass.html">Masterclass</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="#contatti">Contatti</a>
     </nav>
+  </header>
 
-    <main>
-        <h2>Benvenuto</h2>
-        <p>Scopri la mia attività di insegnante, direttore di coro e formatore.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Choir_icon.svg/512px-Choir_icon.svg.png" alt="Coro">
-    </main>
+  <section class="hero" id="chi-sono">
+    <img class="avatar" src="foto.jpg" alt="Foto di Francesco (carica un file chiamato 'foto.jpg')"> 
+    <div>
+      <h2>Benvenuto</h2>
+      <p>Mi occupo di vocalità corale, direzione e didattica musicale in contesti scolastici, accademici e concertistici.</p>
+      <p>
+        <a class="btn" href="masterclass.html">Vedi le masterclass</a>
+        <a class="btn" href="curriculum.html">Leggi il CV</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="progetti">
+    <h2>Progetti</h2>
+    <div class="grid">
+      <div class="card"><h3>Masterclass</h3><p>Formazione per direttori e cantori. <a href="masterclass.html">Dettagli →</a></p></div>
+      <div class="card"><h3>Concerti</h3><p>Eventi nazionali e internazionali.</p></div>
+      <div class="card"><h3>Didattica</h3><p>Laboratori e progetti scolastici.</p></div>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:info@francescomazzitelli.it">info@francescomazzitelli.it</a></p>
+    <p>Curriculum PDF: <a href="cv_francesco.pdf">Scarica</a> (carica il tuo PDF con questo nome)</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Francesco Mazzitelli - Tutti i diritti riservati</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,10 @@
+AGGIORNAMENTO SITO – ISTRUZIONI
+1) Carica questi file nel repository GitHub 'francescomazzitelli-sito':
+   - index.html
+   - curriculum.html
+   - masterclass.html
+2) Carica anche:
+   - foto.jpg  (rinomina la tua foto così)
+   - cv_francesco.pdf  (rinomina il tuo PDF così)
+3) Dopo il commit, attendi 1 minuto e ricarica il sito:
+   https://mazzitellifrancesco7-coder.github.io/francescomazzitelli-sito/

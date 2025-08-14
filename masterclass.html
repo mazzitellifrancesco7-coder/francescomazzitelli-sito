@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masterclass – Francesco Mazzitelli</title>
+  <style>
+    :root{ --bg:#fffaf3; --fg:#1f1b16; --brand:#a86b12; }
+    body{font-family:Arial, sans-serif; margin:0; background:var(--bg); color:var(--fg)}
+    header{background:var(--brand); color:#fff; padding:20px; text-align:center}
+    main{max-width:1000px; margin:0 auto; padding:32px 20px}
+    h2{color:var(--brand)}
+    .grid{display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(280px,1fr))}
+    .card{background:#fff; border:1px solid #ecdcc6; border-radius:14px; padding:16px; box-shadow:0 4px 10px rgba(0,0,0,.06)}
+    .when{font-weight:bold; color:var(--brand)} .where{color:#6b5e53}
+    .back{display:inline-block; margin-bottom:10px; border:1px solid #e6d5bd; padding:8px 12px; border-radius:10px; background:#fff}
+  </style>
+</head>
+<body>
+  <header><h1>Masterclass</h1></header>
+  <main>
+    <a class="back" href="index.html">← Torna alla Home</a>
+    <p>Elenco delle masterclass svolte (sostituisci gli esempi):</p>
+    <div class="grid">
+      <div class="card">
+        <div class="when">[Data] – [Città]</div>
+        <div class="where">[Sede / Festival / Conservatorio]</div>
+        <p>[Titolo o tema della masterclass]</p>
+      </div>
+      <div class="card">
+        <div class="when">[Data] – [Città]</div>
+        <div class="where">[Sede / Festival / Conservatorio]</div>
+        <p>[Titolo o tema della masterclass]</p>
+      </div>
+      <div class="card">
+        <div class="when">[Data] – [Città]</div>
+        <div class="where">[Sede / Festival / Conservatorio]</div>
+        <p>[Titolo o tema della masterclass]</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
